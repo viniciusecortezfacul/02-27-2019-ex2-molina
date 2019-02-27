@@ -5,38 +5,23 @@
  */
 package cortez.ex2;
 
+import java.util.List;
+
 /**
  *
- * @author Vinicius Eustaquio Cortez
+ * @author IFSP
  */
-public class Aluno {
+public class Disciplina {
     private String nome;
-    private String email;
     private String id;
-    private Matricula matricula;
-    
-    public Aluno(){}
-    public Aluno(String id){
-        this.id = id;
-    }
-    public Matricula getMatricula() {
-        return matricula;
-    }
-    
+    private List<Aluno> alunos;
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getId() {
@@ -46,5 +31,8 @@ public class Aluno {
     public void setId(String id) {
         this.id = id;
     }
-    
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
 }
