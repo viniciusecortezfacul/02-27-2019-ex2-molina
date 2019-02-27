@@ -10,13 +10,19 @@ import java.util.Date;
 
 /**
  *
- * @author IFSP
+ * @author Vinicius Eustaquio Cortez
  */
 public class Matricula {
     private Aluno aluno;
     private Disciplina disciplina;
     private Date data = Calendar.getInstance().getTime();
-
+    
+    public Matricula(Aluno aluno){
+        this.aluno = aluno;
+    }
+    public Matricula(Disciplina disciplina){
+        this.disciplina = disciplina;
+    }
     public Aluno getAluno() {
         return aluno;
     }

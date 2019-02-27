@@ -5,17 +5,17 @@
  */
 package cortez.ex2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
- * @author IFSP
+ * @author Vinicius Eustaquio Cortez
  */
 public class Disciplina {
     private String nome;
     private String id;
-    private List<Aluno> alunos;
-
+    private List<Matricula> matriculas = new ArrayList();
     public String getNome() {
         return nome;
     }
@@ -31,8 +31,7 @@ public class Disciplina {
     public void setId(String id) {
         this.id = id;
     }
-
-    public List<Aluno> getAlunos() {
-        return alunos;
+    public List<Matricula> getMatricula(){
+        return this.matriculas;
     }
 }

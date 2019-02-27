@@ -5,6 +5,8 @@
  */
 package cortez.ex2;
 
+import java.util.List;
+import java.util.ArrayList;
 /**
  *
  * @author Vinicius Eustaquio Cortez
@@ -13,13 +15,12 @@ public class Aluno {
     private String nome;
     private String email;
     private String id;
-    private Matricula matricula;
-    
+    private List<Matricula> matricula = new ArrayList(); 
     public Aluno(){}
     public Aluno(String id){
         this.id = id;
     }
-    public Matricula getMatricula() {
+    public List<Matricula> getMatricula() {
         return matricula;
     }
     
